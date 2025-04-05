@@ -30,30 +30,43 @@ namespace XMLWeather
 
         public static void ExtractForecast()
         {
-            XmlReader reader = XmlReader.Create($"http://api.openweathermap.org/data/2.5/forecast/daily?q={mainScreen.cityName}&mode=xml&units=metric&cnt=8&appid=3f2e224b815c0ed45524322e145149f0");
+            XmlReader reader = XmlReader.Create($"http://api.openweathermap.org/data/2.5/forecast/daily?q={mainScreen.cityName}&mode=xml&units=metric&cnt=6&appid=3f2e224b815c0ed45524322e145149f0");
 
             while (reader.Read())
             {
                 //create a day object
-                Day d = new Day(); 
+                Day d = new Day();
 
-                //TODO: Find the time element and get the day attribute
-                reader.ReadToFollowing("time");
-                d.date = reader.GetAttribute("day");
+                //TODO: Find the weather condition
+                reader.ReadToFollowing("symbol");
+                d.condition = reader.GetAttribute("name");
 
                 //TODO: Find the temperature element and get the min and max attributes
                 reader.ReadToFollowing("temperature");
+
                 string lowtemp = reader.GetAttribute("min");
                 double templow = Convert.ToDouble(lowtemp);
-                d.tempLow = $"{templow.ToString("#")}";
+
+                if (templow < 1 && templow > 0)
+                {
+                    d.tempLow = "0";
+                }
+                else
+                {
+                    d.tempLow = $"{templow.ToString("#")}";
+                }
 
                 string hightemp = reader.GetAttribute("max");
                 double temphigh = Convert.ToDouble(hightemp);
-                d.tempHigh = $"{temphigh.ToString("#")}";
 
-                //TODO: Find the cloud condition
-                reader.ReadToFollowing("clouds");
-                d.condition = reader.GetAttribute("value");
+                if (temphigh < 1 && temphigh > 0)
+                {
+                    d.tempHigh = "0";
+                }
+                else
+                {
+                    d.tempHigh = $"{temphigh.ToString("#")}";
+                }
 
                 //TODO: Add day to list of days
                 days.Add(d);
@@ -67,6 +80,8 @@ namespace XMLWeather
             //TODO: find the city and current temperature and add to appropriate item in days list
             reader.ReadToFollowing("city");
             days[0].location = reader.GetAttribute("name");
+
+            days[0].date = DateTime.Now.ToString("MMMM dd, yyy");
 
             reader.ReadToFollowing("temperature");
             string current = reader.GetAttribute("value");
