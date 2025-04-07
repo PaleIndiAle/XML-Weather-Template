@@ -31,7 +31,7 @@
             this.searchBox = new System.Windows.Forms.TextBox();
             this.searchButton = new System.Windows.Forms.Button();
             this.cityLabel = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.weatherBackground = new System.Windows.Forms.PictureBox();
             this.dateLabel = new System.Windows.Forms.Label();
             this.currentLabel = new System.Windows.Forms.Label();
             this.weatherPicture = new System.Windows.Forms.PictureBox();
@@ -75,7 +75,7 @@
             this.conditionLabel6 = new System.Windows.Forms.Label();
             this.dateLabel6 = new System.Windows.Forms.Label();
             this.weatherPicture6 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.weatherBackground)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.weatherPicture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.weatherPicture2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.weatherPicture3)).BeginInit();
@@ -118,13 +118,13 @@
             this.cityLabel.Text = "Stratford";
             this.cityLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // pictureBox1
+            // weatherBackground
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(320, 480);
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
+            this.weatherBackground.Location = new System.Drawing.Point(0, 0);
+            this.weatherBackground.Name = "weatherBackground";
+            this.weatherBackground.Size = new System.Drawing.Size(320, 480);
+            this.weatherBackground.TabIndex = 3;
+            this.weatherBackground.TabStop = false;
             // 
             // dateLabel
             // 
@@ -167,7 +167,7 @@
             // maxLabel
             // 
             this.maxLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maxLabel.Location = new System.Drawing.Point(191, 163);
+            this.maxLabel.Location = new System.Drawing.Point(191, 184);
             this.maxLabel.Name = "maxLabel";
             this.maxLabel.Size = new System.Drawing.Size(53, 26);
             this.maxLabel.TabIndex = 8;
@@ -177,7 +177,7 @@
             // minLabel
             // 
             this.minLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.minLabel.Location = new System.Drawing.Point(241, 163);
+            this.minLabel.Location = new System.Drawing.Point(241, 184);
             this.minLabel.Name = "minLabel";
             this.minLabel.Size = new System.Drawing.Size(53, 26);
             this.minLabel.TabIndex = 9;
@@ -215,7 +215,7 @@
             // label3
             // 
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(185, 189);
+            this.label3.Location = new System.Drawing.Point(185, 162);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(59, 20);
             this.label3.TabIndex = 13;
@@ -225,7 +225,7 @@
             // label4
             // 
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(242, 189);
+            this.label4.Location = new System.Drawing.Point(242, 162);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(52, 20);
             this.label4.TabIndex = 14;
@@ -594,10 +594,10 @@
             this.Controls.Add(this.cityLabel);
             this.Controls.Add(this.searchButton);
             this.Controls.Add(this.searchBox);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.weatherBackground);
             this.Name = "mainScreen";
             this.Size = new System.Drawing.Size(320, 480);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.weatherBackground)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.weatherPicture)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.weatherPicture2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.weatherPicture3)).EndInit();
@@ -614,7 +614,7 @@
         private System.Windows.Forms.TextBox searchBox;
         private System.Windows.Forms.Button searchButton;
         private System.Windows.Forms.Label cityLabel;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox weatherBackground;
         private System.Windows.Forms.Label dateLabel;
         private System.Windows.Forms.Label currentLabel;
         private System.Windows.Forms.PictureBox weatherPicture;

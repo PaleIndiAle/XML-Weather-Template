@@ -39,6 +39,9 @@ namespace XMLWeather
 
                 //TODO: Find the weather condition
                 reader.ReadToFollowing("symbol");
+                string CID = reader.GetAttribute("number");
+                d.conditionID = Convert.ToInt32(CID);
+
                 d.condition = reader.GetAttribute("name");
 
                 //TODO: Find the temperature element and get the min and max attributes
@@ -47,7 +50,7 @@ namespace XMLWeather
                 string lowtemp = reader.GetAttribute("min");
                 double templow = Convert.ToDouble(lowtemp);
 
-                if (templow < 1 && templow > 0)
+                if (templow < 1 && templow > -1)
                 {
                     d.tempLow = "0";
                 }
@@ -59,7 +62,7 @@ namespace XMLWeather
                 string hightemp = reader.GetAttribute("max");
                 double temphigh = Convert.ToDouble(hightemp);
 
-                if (temphigh < 1 && temphigh > 0)
+                if (temphigh < 1 && temphigh > -1)
                 {
                     d.tempHigh = "0";
                 }

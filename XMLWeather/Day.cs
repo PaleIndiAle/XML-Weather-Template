@@ -10,10 +10,14 @@ namespace XMLWeather
         public string date, currentTemp, currentTime, condition, location, tempHigh, tempLow, 
             windSpeed, windDirection, precipitation, visibility;
 
+        public int conditionID;
+
         public Day()
         {
             date = currentTemp = currentTime = condition = location = tempHigh = tempLow
                 = windSpeed = windDirection = precipitation = visibility = "";
+
+            conditionID = 0;
         }
     }
 }

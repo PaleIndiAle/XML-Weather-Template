@@ -8,6 +8,7 @@ using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Media;
 
 namespace XMLWeather
 {
@@ -52,6 +53,17 @@ namespace XMLWeather
             lowestTempLabel2.Text = $"{Form1.days[3].tempLow}*C";
             lowestTempLabel3.Text = $"{Form1.days[4].tempLow}*C";
             lowestTempLabel4.Text = $"{Form1.days[5].tempLow}*C";
+
+            foreach (Day d in Form1.days)
+            {
+                for (int i = 0; i < 7; i++)
+                {
+                    if (d.conditionID <= 200 || d.conditionID >= 232)
+                    {
+                        weatherPicture[i].Picture = XMLWeather.Properties.Resources.11d;
+                    }
+                }
+            }
         }
 
         private void searchBox_Click(object sender, EventArgs e)
