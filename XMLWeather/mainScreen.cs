@@ -15,11 +15,14 @@ namespace XMLWeather
     public partial class mainScreen : UserControl
     {
         public static string cityName = "Stratford,CA";
-
+        public static List<PictureBox> picList = new List<PictureBox>();
         public mainScreen()
         {
             InitializeComponent();
             DisplayCurrent();
+
+            picList.Add(weatherPicture);
+            picList.Add(weatherPicture2);
         }
         public void DisplayCurrent()
         {
@@ -54,14 +57,43 @@ namespace XMLWeather
             lowestTempLabel3.Text = $"{Form1.days[4].tempLow}*C";
             lowestTempLabel4.Text = $"{Form1.days[5].tempLow}*C";
 
-            foreach (Day d in Form1.days)
+            for (int i = 0 ; i < Form1.days.Count -1 ; i++)
             {
-                for (int i = 0; i < 7; i++)
+                if (Form1.days[i].conditionID >= 200 && Form1.days[i].conditionID <= 232)
                 {
-                    if (d.conditionID <= 200 || d.conditionID >= 232)
-                    {
-                        weatherPicture[i].Picture = XMLWeather.Properties.Resources.11d;
-                    }
+                    picList[i].Image = XMLWeather.Properties.Resources._11d;
+                }
+                else if (Form1.days[i].conditionID >= 300 && Form1.days[i].conditionID <= 321 || Form1.days[i].conditionID >= 520 && Form1.days[i].conditionID <= 531)
+                {
+                    picList[i].Image = XMLWeather.Properties.Resources._09d;
+                }
+                else if (Form1.days[i].conditionID >= 500 && Form1.days[i].conditionID <= 504)
+                {
+                    picList[i].Image = XMLWeather.Properties.Resources._10d;
+                }
+                else if (Form1.days[i].conditionID == 511 || Form1.days[i].conditionID >= 600 && Form1.days[i].conditionID <= 622)
+                {
+                    picList[i].Image = XMLWeather.Properties.Resources._13d;
+                }
+                else if (Form1.days[i].conditionID >= 701 && Form1.days[i].conditionID <= 781)
+                {
+                    picList[i].Image = XMLWeather.Properties.Resources._50d;
+                }
+                else if (Form1.days[i].conditionID == 800)
+                {
+                    picList[i].Image = XMLWeather.Properties.Resources._01d;
+                }
+                else if (Form1.days[i].conditionID == 801)
+                {
+                    picList[i].Image = XMLWeather.Properties.Resources._02d;
+                }
+                else if (Form1.days[i].conditionID == 802)
+                {
+                    picList[i].Image = XMLWeather.Properties.Resources._03d;
+                }
+                else if (Form1.days[i].conditionID >= 803 || Form1.days[i].conditionID <= 804)
+                {
+                    picList[i].Image = XMLWeather.Properties.Resources._04d;
                 }
             }
         }
