@@ -32,6 +32,8 @@ namespace XMLWeather
         {
             XmlReader reader = XmlReader.Create($"http://api.openweathermap.org/data/2.5/forecast/daily?q={mainScreen.cityName}&mode=xml&units=metric&cnt=6&appid=3f2e224b815c0ed45524322e145149f0");
 
+
+
             while (reader.Read())
             {
                 //create a day object

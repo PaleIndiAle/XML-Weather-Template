@@ -31,7 +31,6 @@
             this.searchBox = new System.Windows.Forms.TextBox();
             this.searchButton = new System.Windows.Forms.Button();
             this.cityLabel = new System.Windows.Forms.Label();
-            this.weatherBackground = new System.Windows.Forms.PictureBox();
             this.dateLabel = new System.Windows.Forms.Label();
             this.currentLabel = new System.Windows.Forms.Label();
             this.weatherPicture = new System.Windows.Forms.PictureBox();
@@ -75,7 +74,6 @@
             this.conditionLabel6 = new System.Windows.Forms.Label();
             this.dateLabel6 = new System.Windows.Forms.Label();
             this.weatherPicture6 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.weatherBackground)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.weatherPicture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.weatherPicture2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.weatherPicture3)).BeginInit();
@@ -118,16 +116,9 @@
             this.cityLabel.Text = "Stratford";
             this.cityLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // weatherBackground
-            // 
-            this.weatherBackground.Location = new System.Drawing.Point(0, 0);
-            this.weatherBackground.Name = "weatherBackground";
-            this.weatherBackground.Size = new System.Drawing.Size(320, 480);
-            this.weatherBackground.TabIndex = 3;
-            this.weatherBackground.TabStop = false;
-            // 
             // dateLabel
             // 
+            this.dateLabel.BackColor = System.Drawing.Color.Transparent;
             this.dateLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateLabel.Location = new System.Drawing.Point(4, 88);
             this.dateLabel.Name = "dateLabel";
@@ -138,6 +129,7 @@
             // 
             // currentLabel
             // 
+            this.currentLabel.BackColor = System.Drawing.Color.Transparent;
             this.currentLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.currentLabel.Location = new System.Drawing.Point(204, 127);
             this.currentLabel.Name = "currentLabel";
@@ -148,14 +140,17 @@
             // 
             // weatherPicture
             // 
+            this.weatherPicture.BackColor = System.Drawing.Color.Transparent;
             this.weatherPicture.Location = new System.Drawing.Point(204, 39);
             this.weatherPicture.Name = "weatherPicture";
             this.weatherPicture.Size = new System.Drawing.Size(80, 80);
+            this.weatherPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.weatherPicture.TabIndex = 6;
             this.weatherPicture.TabStop = false;
             // 
             // conditionLabel
             // 
+            this.conditionLabel.BackColor = System.Drawing.Color.Transparent;
             this.conditionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.conditionLabel.Location = new System.Drawing.Point(3, 122);
             this.conditionLabel.Name = "conditionLabel";
@@ -166,6 +161,7 @@
             // 
             // maxLabel
             // 
+            this.maxLabel.BackColor = System.Drawing.Color.Transparent;
             this.maxLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.maxLabel.Location = new System.Drawing.Point(191, 184);
             this.maxLabel.Name = "maxLabel";
@@ -176,6 +172,7 @@
             // 
             // minLabel
             // 
+            this.minLabel.BackColor = System.Drawing.Color.Transparent;
             this.minLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.minLabel.Location = new System.Drawing.Point(241, 184);
             this.minLabel.Name = "minLabel";
@@ -186,14 +183,18 @@
             // 
             // weatherPicture2
             // 
+            this.weatherPicture2.BackColor = System.Drawing.Color.Transparent;
+            this.weatherPicture2.Image = global::XMLWeather.Properties.Resources._01d;
             this.weatherPicture2.Location = new System.Drawing.Point(0, 223);
             this.weatherPicture2.Name = "weatherPicture2";
             this.weatherPicture2.Size = new System.Drawing.Size(40, 40);
+            this.weatherPicture2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.weatherPicture2.TabIndex = 10;
             this.weatherPicture2.TabStop = false;
             // 
             // dateLabel2
             // 
+            this.dateLabel2.BackColor = System.Drawing.Color.Transparent;
             this.dateLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateLabel2.Location = new System.Drawing.Point(46, 223);
             this.dateLabel2.Name = "dateLabel2";
@@ -204,6 +205,7 @@
             // 
             // conditionLabel2
             // 
+            this.conditionLabel2.BackColor = System.Drawing.Color.Transparent;
             this.conditionLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.conditionLabel2.Location = new System.Drawing.Point(46, 243);
             this.conditionLabel2.Name = "conditionLabel2";
@@ -214,6 +216,7 @@
             // 
             // label3
             // 
+            this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(185, 162);
             this.label3.Name = "label3";
@@ -224,6 +227,7 @@
             // 
             // label4
             // 
+            this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(242, 162);
             this.label4.Name = "label4";
@@ -234,6 +238,7 @@
             // 
             // highestTempLabel
             // 
+            this.highestTempLabel.BackColor = System.Drawing.Color.Transparent;
             this.highestTempLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.highestTempLabel.Location = new System.Drawing.Point(155, 238);
             this.highestTempLabel.Name = "highestTempLabel";
@@ -244,6 +249,7 @@
             // 
             // label6
             // 
+            this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(151, 218);
             this.label6.Name = "label6";
@@ -254,6 +260,7 @@
             // 
             // label7
             // 
+            this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(214, 218);
             this.label7.Name = "label7";
@@ -264,6 +271,7 @@
             // 
             // lowestTempLabel
             // 
+            this.lowestTempLabel.BackColor = System.Drawing.Color.Transparent;
             this.lowestTempLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lowestTempLabel.Location = new System.Drawing.Point(218, 238);
             this.lowestTempLabel.Name = "lowestTempLabel";
@@ -274,6 +282,7 @@
             // 
             // label1
             // 
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(214, 264);
             this.label1.Name = "label1";
@@ -284,6 +293,7 @@
             // 
             // lowestTempLabel1
             // 
+            this.lowestTempLabel1.BackColor = System.Drawing.Color.Transparent;
             this.lowestTempLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lowestTempLabel1.Location = new System.Drawing.Point(218, 284);
             this.lowestTempLabel1.Name = "lowestTempLabel1";
@@ -294,6 +304,7 @@
             // 
             // label5
             // 
+            this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(151, 264);
             this.label5.Name = "label5";
@@ -304,6 +315,7 @@
             // 
             // highestTempLabel1
             // 
+            this.highestTempLabel1.BackColor = System.Drawing.Color.Transparent;
             this.highestTempLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.highestTempLabel1.Location = new System.Drawing.Point(155, 284);
             this.highestTempLabel1.Name = "highestTempLabel1";
@@ -314,6 +326,7 @@
             // 
             // conditionLabel3
             // 
+            this.conditionLabel3.BackColor = System.Drawing.Color.Transparent;
             this.conditionLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.conditionLabel3.Location = new System.Drawing.Point(46, 289);
             this.conditionLabel3.Name = "conditionLabel3";
@@ -324,6 +337,7 @@
             // 
             // dateLabel3
             // 
+            this.dateLabel3.BackColor = System.Drawing.Color.Transparent;
             this.dateLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateLabel3.Location = new System.Drawing.Point(46, 269);
             this.dateLabel3.Name = "dateLabel3";
@@ -334,14 +348,17 @@
             // 
             // weatherPicture3
             // 
+            this.weatherPicture3.BackColor = System.Drawing.Color.Transparent;
             this.weatherPicture3.Location = new System.Drawing.Point(0, 269);
             this.weatherPicture3.Name = "weatherPicture3";
             this.weatherPicture3.Size = new System.Drawing.Size(40, 40);
+            this.weatherPicture3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.weatherPicture3.TabIndex = 19;
             this.weatherPicture3.TabStop = false;
             // 
             // label11
             // 
+            this.label11.BackColor = System.Drawing.Color.Transparent;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.Location = new System.Drawing.Point(214, 310);
             this.label11.Name = "label11";
@@ -352,6 +369,7 @@
             // 
             // lowestTempLabel2
             // 
+            this.lowestTempLabel2.BackColor = System.Drawing.Color.Transparent;
             this.lowestTempLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lowestTempLabel2.Location = new System.Drawing.Point(218, 330);
             this.lowestTempLabel2.Name = "lowestTempLabel2";
@@ -362,6 +380,7 @@
             // 
             // label13
             // 
+            this.label13.BackColor = System.Drawing.Color.Transparent;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.Location = new System.Drawing.Point(151, 310);
             this.label13.Name = "label13";
@@ -372,6 +391,7 @@
             // 
             // highestTempLabel2
             // 
+            this.highestTempLabel2.BackColor = System.Drawing.Color.Transparent;
             this.highestTempLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.highestTempLabel2.Location = new System.Drawing.Point(155, 330);
             this.highestTempLabel2.Name = "highestTempLabel2";
@@ -382,6 +402,7 @@
             // 
             // conditionLabel4
             // 
+            this.conditionLabel4.BackColor = System.Drawing.Color.Transparent;
             this.conditionLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.conditionLabel4.Location = new System.Drawing.Point(46, 335);
             this.conditionLabel4.Name = "conditionLabel4";
@@ -392,6 +413,7 @@
             // 
             // dateLabel4
             // 
+            this.dateLabel4.BackColor = System.Drawing.Color.Transparent;
             this.dateLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateLabel4.Location = new System.Drawing.Point(46, 315);
             this.dateLabel4.Name = "dateLabel4";
@@ -402,14 +424,17 @@
             // 
             // weatherPicture4
             // 
+            this.weatherPicture4.BackColor = System.Drawing.Color.Transparent;
             this.weatherPicture4.Location = new System.Drawing.Point(0, 315);
             this.weatherPicture4.Name = "weatherPicture4";
             this.weatherPicture4.Size = new System.Drawing.Size(40, 40);
+            this.weatherPicture4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.weatherPicture4.TabIndex = 26;
             this.weatherPicture4.TabStop = false;
             // 
             // label17
             // 
+            this.label17.BackColor = System.Drawing.Color.Transparent;
             this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.Location = new System.Drawing.Point(214, 356);
             this.label17.Name = "label17";
@@ -420,6 +445,7 @@
             // 
             // lowestTempLabel3
             // 
+            this.lowestTempLabel3.BackColor = System.Drawing.Color.Transparent;
             this.lowestTempLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lowestTempLabel3.Location = new System.Drawing.Point(218, 376);
             this.lowestTempLabel3.Name = "lowestTempLabel3";
@@ -430,6 +456,7 @@
             // 
             // label19
             // 
+            this.label19.BackColor = System.Drawing.Color.Transparent;
             this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label19.Location = new System.Drawing.Point(151, 356);
             this.label19.Name = "label19";
@@ -440,6 +467,7 @@
             // 
             // highestTempLabel3
             // 
+            this.highestTempLabel3.BackColor = System.Drawing.Color.Transparent;
             this.highestTempLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.highestTempLabel3.Location = new System.Drawing.Point(155, 376);
             this.highestTempLabel3.Name = "highestTempLabel3";
@@ -450,6 +478,7 @@
             // 
             // conditionLabel5
             // 
+            this.conditionLabel5.BackColor = System.Drawing.Color.Transparent;
             this.conditionLabel5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.conditionLabel5.Location = new System.Drawing.Point(46, 381);
             this.conditionLabel5.Name = "conditionLabel5";
@@ -460,6 +489,7 @@
             // 
             // dateLabel5
             // 
+            this.dateLabel5.BackColor = System.Drawing.Color.Transparent;
             this.dateLabel5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateLabel5.Location = new System.Drawing.Point(46, 361);
             this.dateLabel5.Name = "dateLabel5";
@@ -470,14 +500,17 @@
             // 
             // weatherPicture5
             // 
+            this.weatherPicture5.BackColor = System.Drawing.Color.Transparent;
             this.weatherPicture5.Location = new System.Drawing.Point(0, 361);
             this.weatherPicture5.Name = "weatherPicture5";
             this.weatherPicture5.Size = new System.Drawing.Size(40, 40);
+            this.weatherPicture5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.weatherPicture5.TabIndex = 33;
             this.weatherPicture5.TabStop = false;
             // 
             // label23
             // 
+            this.label23.BackColor = System.Drawing.Color.Transparent;
             this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label23.Location = new System.Drawing.Point(214, 402);
             this.label23.Name = "label23";
@@ -488,6 +521,7 @@
             // 
             // lowestTempLabel4
             // 
+            this.lowestTempLabel4.BackColor = System.Drawing.Color.Transparent;
             this.lowestTempLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lowestTempLabel4.Location = new System.Drawing.Point(218, 422);
             this.lowestTempLabel4.Name = "lowestTempLabel4";
@@ -498,6 +532,7 @@
             // 
             // label25
             // 
+            this.label25.BackColor = System.Drawing.Color.Transparent;
             this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label25.Location = new System.Drawing.Point(151, 402);
             this.label25.Name = "label25";
@@ -508,6 +543,7 @@
             // 
             // highestTempLabel4
             // 
+            this.highestTempLabel4.BackColor = System.Drawing.Color.Transparent;
             this.highestTempLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.highestTempLabel4.Location = new System.Drawing.Point(155, 422);
             this.highestTempLabel4.Name = "highestTempLabel4";
@@ -518,6 +554,7 @@
             // 
             // conditionLabel6
             // 
+            this.conditionLabel6.BackColor = System.Drawing.Color.Transparent;
             this.conditionLabel6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.conditionLabel6.Location = new System.Drawing.Point(46, 427);
             this.conditionLabel6.Name = "conditionLabel6";
@@ -528,6 +565,7 @@
             // 
             // dateLabel6
             // 
+            this.dateLabel6.BackColor = System.Drawing.Color.Transparent;
             this.dateLabel6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateLabel6.Location = new System.Drawing.Point(46, 407);
             this.dateLabel6.Name = "dateLabel6";
@@ -538,9 +576,11 @@
             // 
             // weatherPicture6
             // 
+            this.weatherPicture6.BackColor = System.Drawing.Color.Transparent;
             this.weatherPicture6.Location = new System.Drawing.Point(0, 407);
             this.weatherPicture6.Name = "weatherPicture6";
             this.weatherPicture6.Size = new System.Drawing.Size(40, 40);
+            this.weatherPicture6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.weatherPicture6.TabIndex = 40;
             this.weatherPicture6.TabStop = false;
             // 
@@ -594,10 +634,8 @@
             this.Controls.Add(this.cityLabel);
             this.Controls.Add(this.searchButton);
             this.Controls.Add(this.searchBox);
-            this.Controls.Add(this.weatherBackground);
             this.Name = "mainScreen";
             this.Size = new System.Drawing.Size(320, 480);
-            ((System.ComponentModel.ISupportInitialize)(this.weatherBackground)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.weatherPicture)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.weatherPicture2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.weatherPicture3)).EndInit();
@@ -614,7 +652,6 @@
         private System.Windows.Forms.TextBox searchBox;
         private System.Windows.Forms.Button searchButton;
         private System.Windows.Forms.Label cityLabel;
-        private System.Windows.Forms.PictureBox weatherBackground;
         private System.Windows.Forms.Label dateLabel;
         private System.Windows.Forms.Label currentLabel;
         private System.Windows.Forms.PictureBox weatherPicture;

@@ -20,12 +20,16 @@ namespace XMLWeather
         {
             InitializeComponent();
             DisplayCurrent();
-
-            picList.Add(weatherPicture);
-            picList.Add(weatherPicture2);
         }
         public void DisplayCurrent()
         {
+            picList.Add(weatherPicture);
+            picList.Add(weatherPicture2);
+            picList.Add(weatherPicture3);
+            picList.Add(weatherPicture4);
+            picList.Add(weatherPicture5);
+            picList.Add(weatherPicture6);
+
             cityLabel.Text = $"{Form1.days[0].location}";
             dateLabel.Text = $"{Form1.days[0].date}";
             maxLabel.Text = $"{Form1.days[0].tempHigh}*C";
@@ -57,7 +61,44 @@ namespace XMLWeather
             lowestTempLabel3.Text = $"{Form1.days[4].tempLow}*C";
             lowestTempLabel4.Text = $"{Form1.days[5].tempLow}*C";
 
-            for (int i = 0 ; i < Form1.days.Count -1 ; i++)
+            if (Form1.days[0].conditionID >= 200 && Form1.days[0].conditionID <= 232)
+            {
+                this.BackColor = Color.Gray;
+            }
+            else if (Form1.days[0].conditionID >= 300 && Form1.days[0].conditionID <= 321 || Form1.days[0].conditionID >= 520 && Form1.days[0].conditionID <= 531)
+            {
+                this.BackColor = Color.LightBlue;
+            }
+            else if (Form1.days[0].conditionID >= 500 && Form1.days[0].conditionID <= 504)
+            {
+                this.BackColor = Color.Blue;
+            }
+            else if (Form1.days[0].conditionID == 511 || Form1.days[0].conditionID >= 600 && Form1.days[0].conditionID <= 622)
+            {
+                this.BackColor = Color.WhiteSmoke;
+            }
+            else if (Form1.days[0].conditionID >= 701 && Form1.days[0].conditionID <= 781)
+            {
+                this.BackColor = Color.DimGray;
+            }
+            else if (Form1.days[0].conditionID == 800)
+            {
+                this.BackColor = Color.White;
+            }
+            else if (Form1.days[0].conditionID == 801)
+            {
+                this.BackColor = Color.LightSlateGray;
+            }
+            else if (Form1.days[0].conditionID == 802)
+            {
+                this.BackColor = Color.SlateGray;
+            }
+            else if (Form1.days[0].conditionID >= 803 && Form1.days[0].conditionID <= 804)
+            {
+                this.BackColor = Color.DarkSlateGray;
+            }
+
+            for (int i = 0; i < Form1.days.Count -1; i++)
             {
                 if (Form1.days[i].conditionID >= 200 && Form1.days[i].conditionID <= 232)
                 {
@@ -91,7 +132,7 @@ namespace XMLWeather
                 {
                     picList[i].Image = XMLWeather.Properties.Resources._03d;
                 }
-                else if (Form1.days[i].conditionID >= 803 || Form1.days[i].conditionID <= 804)
+                else if (Form1.days[i].conditionID >= 803 && Form1.days[i].conditionID <= 804)
                 {
                     picList[i].Image = XMLWeather.Properties.Resources._04d;
                 }

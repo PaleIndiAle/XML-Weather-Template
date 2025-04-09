@@ -65,7 +65,7 @@ namespace XMLWeather.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _01d {
             get {
-                object obj = ResourceManager.GetObject("01d", resourceCulture);
+                object obj = ResourceManager.GetObject("_01d", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -75,7 +75,7 @@ namespace XMLWeather.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _02d {
             get {
-                object obj = ResourceManager.GetObject("02d", resourceCulture);
+                object obj = ResourceManager.GetObject("_02d", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -85,7 +85,7 @@ namespace XMLWeather.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _03d {
             get {
-                object obj = ResourceManager.GetObject("03d", resourceCulture);
+                object obj = ResourceManager.GetObject("_03d", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -95,7 +95,7 @@ namespace XMLWeather.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _04d {
             get {
-                object obj = ResourceManager.GetObject("04d", resourceCulture);
+                object obj = ResourceManager.GetObject("_04d", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -105,7 +105,7 @@ namespace XMLWeather.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _09d {
             get {
-                object obj = ResourceManager.GetObject("09d", resourceCulture);
+                object obj = ResourceManager.GetObject("_09d", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -115,7 +115,7 @@ namespace XMLWeather.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _10d {
             get {
-                object obj = ResourceManager.GetObject("10d", resourceCulture);
+                object obj = ResourceManager.GetObject("_10d", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -125,7 +125,7 @@ namespace XMLWeather.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _11d {
             get {
-                object obj = ResourceManager.GetObject("11d", resourceCulture);
+                object obj = ResourceManager.GetObject("_11d", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -135,7 +135,7 @@ namespace XMLWeather.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _13d {
             get {
-                object obj = ResourceManager.GetObject("13d", resourceCulture);
+                object obj = ResourceManager.GetObject("_13d", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -145,7 +145,7 @@ namespace XMLWeather.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _50d {
             get {
-                object obj = ResourceManager.GetObject("50d", resourceCulture);
+                object obj = ResourceManager.GetObject("_50d", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
